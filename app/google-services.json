@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "372675720641",
+    "project_id": "anfaapp-6b987",
+    "storage_bucket": "anfaapp-6b987.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372675720641:android:a61cadac066b9a4291eb40",
+        "android_client_info": {
+          "package_name": "com.example.anfaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "372675720641-de1oo1lhiu680drodb6502ec1ivq7vb4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.anfaapp",
+            "certificate_hash": "31962f8b34116d619d28237723361c96fd38c936"
+          }
+        },
+        {
+          "client_id": "372675720641-0se25b1sqhh6hbsun34udsmgi73e8dev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiB_9V732W-5ZsPOebs-geKsDcjjzoFVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "372675720641-0se25b1sqhh6hbsun34udsmgi73e8dev.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
