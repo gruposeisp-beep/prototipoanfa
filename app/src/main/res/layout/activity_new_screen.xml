@@ -1,56 +1,49 @@
-<!-- res/layout/activity_main.xml -->
+<!-- res/layout/activity_new_screen.xml -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
+    android:gravity="center"
     android:padding="32dp"
-    tools:context=".MainActivity">
+    tools:context=".FutureTablesDashboard">
 
     <TextView
-        android:id="@+id/tvWelcomeTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
-        android:text="Bienvenido a ANFA App"
+        android:text="Gestion de Proximas fechas"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:layout_marginBottom="48dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnGoToCreateFutureTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear Tabla"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnGoToAddFutureMatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Añadir Partido a Tabla"
+        android:layout_marginBottom="16dp" />
 
     <Button
         android:id="@+id/btnGoToTables"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Ver Tablas de Clasificación" />
-
-    <Button
-        android:id="@+id/btnGoToFutureTables"
         style="?attr/materialButtonOutlinedStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="32dp"
         android:text="Ver Proximas fechas" />
 
     <Button
-        android:id="@+id/btnGoToLiveMatches"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ver Partido en Vivo" />
-
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-
-    <Button
-        android:id="@+id/btnLogout"
+        android:id="@+id/btnGoToDeleteFutureTable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/colorError"
-        android:text="Cerrar Sesión" />
+        android:text="Eliminar Tabla" />
 
 </LinearLayout>
-
-
 

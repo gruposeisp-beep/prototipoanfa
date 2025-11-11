@@ -1,62 +1,48 @@
-<!-- res/layout/activity_admin.xml -->
+<!-- res/layout/activity_admin_dashboard.xml -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
+    android:gravity="center"
     android:padding="32dp"
-    tools:context=".AdminActivity">
+    tools:context=".AdminDashboardActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Portal de Administración"
+        android:text="Gestion de Tablas resultados"
         android:textSize="24sp"
-        android:layout_marginBottom="48dp" />
+        android:layout_marginBottom="48dp"
+        android:gravity="center"/>
 
     <Button
-        android:id="@+id/btnGoToAdminDashboard"
+        android:id="@+id/btnGoToCreateTable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Gestion Tablas de resultados"
-        android:layout_marginBottom="16dp"/>
+        android:text="Crear Tabla y Primer Partido"
+        android:layout_marginBottom="16dp" />
 
     <Button
-        android:id="@+id/btnGoToNewScreen"
+        android:id="@+id/btnGoToAddMatch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Gestión de Tablas Proximas fechas"
-        android:layout_marginBottom="16dp"/>
+        android:text="Añadir Partido a Tabla Existente"
+        android:layout_marginBottom="16dp" />
 
     <Button
-        android:id="@+id/btnGoToAddLiveMatch"
+        android:id="@+id/btnGoToTables"
         style="?attr/materialButtonOutlinedStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Gestion Partido en Vivo" />
-
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_marginBottom="32dp"
+        android:text="Ver Tablas de Clasificación" />
 
     <Button
-        android:id="@+id/btnLogoutAdmin"
+        android:id="@+id/btnGoToDeleteTable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/colorError"
-        android:text="Cerrar Sesión" />
+        android:text="Eliminar Tabla" />
 
 </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-

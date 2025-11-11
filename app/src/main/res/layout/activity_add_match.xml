@@ -1,0 +1,74 @@
+<!-- res/layout/activity_add_match.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".AddMatchActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Añadir Nuevo Partido"
+            android:textSize="22sp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar Tabla"
+            android:textSize="16sp"/>
+
+        <Spinner
+            android:id="@+id/spinnerTables"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="24dp"/>
+
+        <EditText
+            android:id="@+id/etTeam1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre Equipo 1"/>
+
+        <EditText
+            android:id="@+id/etScore1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Goles Equipo 1"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/etTeam2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre Equipo 2"/>
+
+        <EditText
+            android:id="@+id/etScore2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Goles Equipo 2"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/etMatchTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hora del partido (ej: 15:00)"/>
+
+        <Button
+            android:id="@+id/btnSaveMatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Guardar Partido en Tabla Seleccionada"/>
+
+    </LinearLayout>
+</ScrollView>

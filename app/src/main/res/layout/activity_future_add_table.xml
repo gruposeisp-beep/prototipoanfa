@@ -1,0 +1,88 @@
+<!-- res/layout/activity_future_add_table.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".FutureAddTableActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Crear Nueva Tabla Proximas fechas"
+            android:textSize="22sp"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Datos de la Tabla"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/etTableTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título de la tabla (ej. 'Torneo de Verano 18 de septiembre')"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Datos del Primer Partido"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/etTeam1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre Equipo 1"/>
+
+        <EditText
+            android:id="@+id/etScore1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Goles Equipo 1"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/etTeam2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre Equipo 2"/>
+
+        <EditText
+            android:id="@+id/etScore2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Goles Equipo 2"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/etMatchTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hora del partido (ej: 15:00)"/>
+
+        <Button
+            android:id="@+id/btnCreateTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Crear Tabla y Guardar Partido"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -33,7 +33,6 @@ class RegisterActivity : AppCompatActivity() {
             }
             auth.createUserWithEmailAndPassword(email, password)
                 .addOnSuccessListener {
-                    // Cerrar sesión para regresar al login
                     auth.signOut()
                     Toast.makeText(this, "Cuenta creada. Inicia sesión para continuar.", Toast.LENGTH_SHORT).show()
                     finish()

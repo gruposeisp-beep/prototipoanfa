@@ -29,7 +29,6 @@ class LoginActivity : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
 
-        // Email + password
         val etEmail = findViewById<TextInputEditText>(R.id.etEmail)
         val etPassword = findViewById<TextInputEditText>(R.id.etPassword)
         val btnLoginEmail = findViewById<MaterialButton>(R.id.btnLoginEmail)
@@ -43,7 +42,7 @@ class LoginActivity : AppCompatActivity() {
             }
             auth.signInWithEmailAndPassword(email, password)
                 .addOnSuccessListener {
-                    if (email == "admin@admin.cl") { // ← reemplaza con el correo del admin real
+                    if (email == "admin@admin.cl") {
                         goAdmin()
                     } else {
                         goHome()
@@ -55,13 +54,11 @@ class LoginActivity : AppCompatActivity() {
 
         }
 
-        // Google Sign-In (One Tap)
         oneTapClient = Identity.getSignInClient(this)
         signInRequest = BeginSignInRequest.builder()
             .setGoogleIdTokenRequestOptions(
                 BeginSignInRequest.GoogleIdTokenRequestOptions.builder()
                     .setSupported(true)
-                    // CLIENT_ID DE TU OAuth Client WEB / ANDROID según config
                     .setServerClientId(getString(R.string.default_web_client_id))
                     .setFilterByAuthorizedAccounts(false)
                     .build()
@@ -83,7 +80,6 @@ class LoginActivity : AppCompatActivity() {
                 }
         }
 
-        // Ir a crear cuenta
         findViewById<TextView>(R.id.tvCreateAccount).setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
         }
@@ -91,7 +87,6 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        // Si ya está logueado, saltar a home
         if (auth.currentUser != null) goHome()
     }
 
@@ -120,7 +115,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun goAdmin() {
-        startActivity(Intent(this, com.example.anfaapp.admin.AdminActivity::class.java))
+        startActivity(Intent(this, com.example.anfaapp.AdminActivity::class.java))
         finish()
     }
 

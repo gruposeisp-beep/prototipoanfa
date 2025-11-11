@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
@@ -12,7 +11,55 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Anfaapp">
         <activity
-            android:name=".admin.AdminActivity"
+            android:name=".EditLiveMatchFormActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditLiveMatchListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DeleteLiveMatchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewLiveMatchesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateLiveMatchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LiveMatchDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FutureTablesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FutureDeleteTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FutureAddMatchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FutureAddTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FutureTablesDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DeleteTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddMatchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TablesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivity"
             android:exported="false" />
         <activity
             android:name=".auth.LoginActivity"
@@ -22,10 +69,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- Registro -->
+        </activity>
         <activity
             android:name=".auth.RegisterActivity"
-            android:exported="false" /> <!-- Pantalla de inicio (tu MainActivity actual) -->
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />

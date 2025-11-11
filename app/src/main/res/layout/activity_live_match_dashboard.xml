@@ -1,54 +1,50 @@
-<!-- res/layout/activity_main.xml -->
+<!-- res/layout/activity_live_match_dashboard.xml -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
+    android:gravity="center"
     android:padding="32dp"
-    tools:context=".MainActivity">
+    tools:context=".LiveMatchDashboardActivity">
 
     <TextView
-        android:id="@+id/tvWelcomeTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
-        android:text="Bienvenido a ANFA App"
+        android:text="Panel de Partidos en Vivo"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:layout_marginBottom="48dp"
+        android:gravity="center"/>
 
     <Button
-        android:id="@+id/btnGoToTables"
+        android:id="@+id/btnGoToCreateLiveMatch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Ver Tablas de Clasificación" />
+        android:text="Añadir Nuevo Partido en Vivo"
+        android:layout_marginBottom="16dp"/>
 
     <Button
-        android:id="@+id/btnGoToFutureTables"
+        android:id="@+id/btnGoToViewLiveMatches"
         style="?attr/materialButtonOutlinedStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Ver Proximas fechas" />
+        android:text="Ver Partidos en Vivo"
+        android:layout_marginBottom="16dp"/>
 
     <Button
-        android:id="@+id/btnGoToLiveMatches"
+        android:id="@+id/btnGoToEditLiveMatch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ver Partido en Vivo" />
-
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:text="Editar Partido en Vivo"
+        android:layout_marginBottom="32dp"/>
 
     <Button
-        android:id="@+id/btnLogout"
+        android:id="@+id/btnGoToDeleteLiveMatch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/colorError"
-        android:text="Cerrar Sesión" />
+        android:text="Eliminar Partido en Vivo" />
 
 </LinearLayout>
 
