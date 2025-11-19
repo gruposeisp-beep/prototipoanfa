@@ -11,6 +11,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Anfaapp">
         <activity
+            android:name=".QrDisplayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ValidateTicketActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyTicketsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TicketPurchaseActivity"
+            android:exported="false" />
+        <activity
             android:name=".EditLiveMatchFormActivity"
             android:exported="false" />
         <activity

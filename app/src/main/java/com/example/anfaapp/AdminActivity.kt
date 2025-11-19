@@ -21,8 +21,8 @@ class AdminActivity : AppCompatActivity() {
         val btnGoToAdminDashboard: Button = findViewById(R.id.btnGoToAdminDashboard)
         val btnGoToNewScreen: Button = findViewById(R.id.btnGoToNewScreen)
         val btnGoToAddLiveMatch: Button = findViewById(R.id.btnGoToAddLiveMatch)
+        val btnGoToValidateTicket: Button = findViewById(R.id.btnGoToValidateTicket)
         val btnLogoutAdmin: Button = findViewById(R.id.btnLogoutAdmin)
-
 
         btnGoToAdminDashboard.setOnClickListener {
             startActivity(Intent(this, AdminDashboardActivity::class.java))
@@ -36,6 +36,10 @@ class AdminActivity : AppCompatActivity() {
             startActivity(Intent(this, LiveMatchDashboardActivity::class.java))
         }
 
+        btnGoToValidateTicket.setOnClickListener {
+            startActivity(Intent(this, ValidateTicketActivity::class.java))
+        }
+
         btnLogoutAdmin.setOnClickListener {
             auth.signOut()
             val intent = Intent(this, LoginActivity::class.java)
@@ -45,6 +49,7 @@ class AdminActivity : AppCompatActivity() {
         }
     }
 }
+
 
 
 

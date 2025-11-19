@@ -1,4 +1,3 @@
-<!-- res/layout/activity_admin.xml -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -34,7 +33,14 @@
         style="?attr/materialButtonOutlinedStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Gestion Partido en Vivo" />
+        android:text="Gestion Partido en Vivo"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnGoToValidateTicket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Validar Tickets" />
 
     <View
         android:layout_width="0dp"

@@ -1,4 +1,3 @@
-<!-- res/layout/activity_live_match_dashboard.xml -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"

@@ -21,19 +21,26 @@ class MainActivity : AppCompatActivity() {
         val btnGoToTables: Button = findViewById(R.id.btnGoToTables)
         val btnGoToFutureTables: Button = findViewById(R.id.btnGoToFutureTables)
         val btnGoToLiveMatches: Button = findViewById(R.id.btnGoToLiveMatches)
+        val btnGoToTicketPurchase: Button = findViewById(R.id.btnGoToTicketPurchase)
+        val btnGoToMyTickets: Button = findViewById(R.id.btnGoToMyTickets)
         val btnLogout: Button = findViewById(R.id.btnLogout)
-
 
         btnGoToTables.setOnClickListener {
             startActivity(Intent(this, TablesActivity::class.java))
         }
-
         btnGoToFutureTables.setOnClickListener {
             startActivity(Intent(this, FutureTablesActivity::class.java))
         }
-
         btnGoToLiveMatches.setOnClickListener {
             startActivity(Intent(this, ViewLiveMatchesActivity::class.java))
+        }
+        btnGoToTicketPurchase.setOnClickListener {
+            startActivity(Intent(this, TicketPurchaseActivity::class.java))
+        }
+
+        btnGoToMyTickets.setOnClickListener {
+            val intent = Intent(this, MyTicketsActivity::class.java)
+            startActivity(intent)
         }
 
         btnLogout.setOnClickListener {
@@ -45,6 +52,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
+
+
 
 
 

@@ -1,24 +1,34 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".EditLiveMatchListActivity">
+    tools:context=".MyTicketsActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Selecciona un partido para editar"
-        android:textSize="22sp"
+        android:text="Mis Tickets"
+        android:textSize="24sp"
+        android:textStyle="bold"
         android:padding="16dp"
         android:gravity="center"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvEditLiveMatches"
+        android:id="@+id/rvMyTickets"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        tools:listitem="@layout/item_edit_live_match"/>
+        android:padding="8dp"
+        tools:listitem="@layout/item_ticket" />
+
+    <TextView
+        android:id="@+id/tvNoTickets"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Aún no has comprado ningún ticket."
+        android:gravity="center"
+        android:textSize="18sp"
+        android:visibility="gone" />
 
 </LinearLayout>
